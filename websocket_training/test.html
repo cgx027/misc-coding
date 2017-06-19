@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+<h1 id="cpu"></h1>
+ <script>
+    ws = new WebSocket("ws://localhost:9999/test");
+
+    ws.onopen = function(){
+        console.log("connected");
+    }
+    
+    ws.onmessage = function(env){
+        console.log("You have got a new message " +  env.data);
+        document.getElementById("cpu").innerHTML = "CPU percentage: " + env.data + " %";
+    }
+</script> 
+</body>
+
+</html> 

@@ -1,0 +1,4 @@
+var ScsiCdb = require('scsi-cdb');
+var scsiCdb = new ScsiCdb();
+var parsedCdb = scsiCdb.decode([0x2a, 0x00, 0x1f, 0xff, 0x9b, 0xf8, 0x00, 0x00, 0x080, 0x00]);
+console.log(parsedCdb);

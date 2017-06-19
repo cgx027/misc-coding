@@ -1,0 +1,15 @@
+{
+  "name": "websocket_training",
+  "version": "1.0.0",
+  "description": "Train code for websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ted Chen",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cpu-percentage": "^1.0.3",
+    "ws": "^3.0.0"
+  }
+}

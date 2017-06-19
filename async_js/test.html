@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+<h1 id="cpu"></h1>
+ <script>
+    // ws = new WebSocket("ws://localhost:9999/test");
+    //
+    // ws.onopen = function(){
+    //     console.log("connected");
+    // }
+    //
+    // ws.onmessage = function(env){
+    //     console.log("You have got a new message " +  env.data);
+    //     document.getElementById("cpu").innerHTML = "CPU percentage: " + env.data + " %";
+    // }
+    async function testfunc(){ console.log("this is a simple test");
+        return new Promise((resolve, reject) => {
+            resolve(1);
+        });
+    }
+
+    async function tester() {
+        var t = await testfunc();
+        return 1;
+    }
+
+    async function tester1() {
+        var t1 = await tester();
+        console.log(t1);
+    }
+    tester1();
+</script> 
+</body>
+
+</html> 
